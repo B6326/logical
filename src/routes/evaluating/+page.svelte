@@ -36,24 +36,24 @@
 <div class="container">
 	<h1>Evaluating</h1>
 	<p class="subtitle">{statusText}</p>
-	<div class="progress-bar-track">
-		<div class="progress-bar-fill" style="width: {progress}%"></div>
+	<div class="progress-track">
+		<div class="progress-fill" style="width: {progress}%"></div>
 	</div>
 </div>
 
 <style>
-	.progress-bar-track {
+	.progress-track {
 		width: 100%;
-		height: 8px;
-		background: #dee2e6;
-		border-radius: 4px;
+		height: 4px;
+		background: #e0e0e0;
+		border-radius: 2px;
 		overflow: hidden;
 	}
 
-	.progress-bar-fill {
+	.progress-fill {
 		height: 100%;
-		background: #4361ee;
-		border-radius: 4px;
+		background: #111;
+		border-radius: 2px;
 		transition: width 0.04s linear;
 	}
 </style>

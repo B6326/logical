@@ -59,9 +59,9 @@
 
 <div class="chat-page">
 	<header class="chat-header">
-		<h1>Logic Test</h1>
+		<span class="chat-title">Logic Test</span>
 		{#if hasUserMessages}
-			<button class="end-chat-btn" onclick={endChat}>End Chat</button>
+			<button class="end-btn" onclick={endChat}>End Chat</button>
 		{/if}
 	</header>
 
@@ -87,77 +87,77 @@
 		display: flex;
 		flex-direction: column;
 		height: 100dvh;
-		max-width: 600px;
-		margin: 0 auto;
 		width: 100%;
+		max-width: 640px;
+		margin: 0 auto;
 	}
 
 	.chat-header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 1rem 1.5rem;
-		border-bottom: 1px solid #dee2e6;
-		background: #fff;
+		padding: 0.875rem 1rem;
+		border-bottom: 1px solid #e0e0e0;
 	}
 
-	.chat-header h1 {
-		font-size: 1.25rem;
-		margin-bottom: 0;
+	.chat-title {
+		font-size: 1.125rem;
+		font-weight: 700;
 	}
 
-	.end-chat-btn {
-		padding: 0.5rem 1rem;
-		font-size: 0.875rem;
-		background: #e74c3c;
+	.end-btn {
+		padding: 0.4rem 0.875rem;
+		font-size: 0.8125rem;
+		background: transparent;
+		color: #111;
+		border: 1px solid #e0e0e0;
 	}
 
-	.end-chat-btn:hover {
-		background: #c0392b;
+	.end-btn:hover {
+		background: #f5f5f5;
 	}
 
 	.chat-messages {
 		flex: 1;
 		overflow-y: auto;
-		padding: 1rem 1.5rem;
+		padding: 1rem;
 		display: flex;
 		flex-direction: column;
-		gap: 0.75rem;
+		gap: 0.5rem;
 	}
 
 	.bubble {
 		max-width: 80%;
-		padding: 0.75rem 1rem;
+		padding: 0.625rem 0.875rem;
 		border-radius: 12px;
 		line-height: 1.4;
 		word-break: break-word;
+		font-size: 0.9375rem;
 	}
 
 	.bubble.user {
 		align-self: flex-end;
-		background: #4361ee;
+		background: #111;
 		color: #fff;
 		border-bottom-right-radius: 4px;
 	}
 
 	.bubble.ai {
 		align-self: flex-start;
-		background: #fff;
-		border: 1px solid #dee2e6;
+		background: #f5f5f5;
 		border-bottom-left-radius: 4px;
 	}
 
 	.bubble.typing {
-		opacity: 0.6;
+		opacity: 0.5;
 		font-style: italic;
 	}
 
 	.chat-input-bar {
 		display: flex;
 		gap: 0.5rem;
-		padding: 1rem 1.5rem;
-		border-top: 1px solid #dee2e6;
-		background: #fff;
+		padding: 0.75rem 1rem;
+		border-top: 1px solid #e0e0e0;
 	}
 
 	.chat-input-bar input {
