@@ -96,6 +96,13 @@ a:hover {
 	text-decoration: underline;
 }
 
+.subtitle {
+	font-size: 1rem;
+	color: #6c757d;
+	margin-bottom: 1.5rem;
+	line-height: 1.5;
+}
+
 .toast {
 	position: fixed;
 	bottom: 1.5rem;
